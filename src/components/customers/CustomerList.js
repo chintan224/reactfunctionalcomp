@@ -33,7 +33,7 @@ export default function CustomerList () {
 
     return(
         <div>
-            <table className='table table-bordered table-hover table-stripped'>
+            <table className='table table-bordered table-hover table-striped'>
                 <thead>
                     <tr>
                         <th>Id</th>

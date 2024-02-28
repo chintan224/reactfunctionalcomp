@@ -1,4 +1,4 @@
-import CustomerList from "../components/customers/customerList";
+import CustomerList from "../components/customers/CustomerList";
 
 export default function CustomerPage() {
     return (

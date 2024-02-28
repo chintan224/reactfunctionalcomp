@@ -24,6 +24,12 @@ export default function CustomerForm(props) {
     const handleSubmit = (event) => {
         event.preventDefault()
         saveCustomer()
+        setNewFormData({
+            id: "",
+            firstName: "",
+            lastName: "",
+            email: ""
+        });
     }
 
     return (
@@ -32,23 +38,24 @@ export default function CustomerForm(props) {
             <hr/>
             <form className='ui form' onSubmit={(event)=>handleSubmit(event)}>
                 <div className='form-group'>
-                    <input type='text'
+                    First Name: <input type='text'
                         name="firstName"
                         value={formData.firstName}
                         onChange={(event) =>handleChange(event)}/> 
                 </div>
                 <div className='form-group'>
-                    <input type='text'
+                    Last Name: <input type='text'
                         name="lastName"
                         value={formData.lastName}
                         onChange={(event) =>handleChange(event)}/> 
                 </div>
                 <div className='form-group'>
-                    <input type='text'
+                    E-mail: <input type='text'
                         name="email"
                         value={formData.email}
                         onChange={(event) =>handleChange(event)}/> 
                 </div>
+                <button type='submit'> Add Customer </button>
             </form>
         </div>
     )

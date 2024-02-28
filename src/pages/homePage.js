@@ -1,6 +1,6 @@
 export default function HomePage() {
     return (
-        <div className="jumbotron blue-bg">
+        <div className="jumbotron bg-warning">
             <h1>Credit Suisse</h1>
             <hr/>
             <h1>Uberragschung</h1>

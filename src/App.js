@@ -7,6 +7,7 @@ import AppNavBar from './pages/appNavBar';
 import CustomerPage from './pages/customerPage.js';
 import Counter from './components/customers/counter';
 import UseEffectDemo from './components/customers/useEffectDemo';
+import Users from './components/customers/users.js';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/about" component={AboutPage}/>
           <Route path="/counter" component={Counter}/>
           <Route path="/useeffect" component={UseEffectDemo}/>
+          <Route path="/users" component={Users} />
         </Switch></div>
       </BrowserRouter>
     </div>
